@@ -4,8 +4,8 @@ export default function ComponentF() {
   return (
     <UserConsumer>
       {
-        (username) => {
-          return <p>Hello {username}</p>
+        function (state) {
+          return <p>Hello {state.firstname} {state.lastname}</p>
         }
       }
     </UserConsumer>
